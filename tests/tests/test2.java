@@ -5,8 +5,9 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import calculate.Calculator;
+import main.MainFrame;
 
-public class test {
+public class test2 {
 
 	private Calculator calculator;
 
@@ -14,8 +15,9 @@ public class test {
 	public void test() {
 		String result; //тестовые параметр
 		calculator = new Calculator();;
-        result = calculator.ReturnCalc(1, 8, 680894 , 1, 7);
-        assertEquals(result, "411,80 ТБ"); //ожидаемый результат
+        result = calculator.calcCamera(8, 680894 , 1 , 1);
+        assertEquals(result, "65,37 Гб/с"); //ожидаемый результат
 	}
+
 
 }
